@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: url("./assets/slider-icon.svg") no-repeat center center;
+  background-size: cover;
+  background-color: #28d6c6;
+  border: 2px solid #28d6c6;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider-thumb::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: url("./assets/slider-icon.svg") no-repeat center center;
+  background-size: cover;
+  background-color: #28d6c6;
+  border: 2px solid #28d6c6;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider-thumb::-ms-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: url("./assets/slider-icon.svg") no-repeat center center;
+  background-size: cover;
+  background-color: #28d6c6;
+
+  border: 2px solid #28d6c6;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider-thumb:hover::-webkit-slider-thumb,
+.slider-thumb:hover::-moz-range-thumb,
+.slider-thumb:hover::-ms-thumb {
+  box-shadow: 0 0 0 8px rgba(40, 214, 198, 0.2);
+}
+
+/* Add hover effect for the toggle switch */
+.peer:hover + div {
+  box-shadow: 0 0 0 4px rgba(40, 214, 198, 0.2);
+}
